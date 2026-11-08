@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-label="Esquema do quadril: cabeça do fêmur, acetábulo, lábio e artroscópio">
+<rect width="360" height="300" rx="18" fill="#EEF4FB"/>
+<path d="M40 40 Q120 20 200 60 Q250 90 240 150" fill="none" stroke="#16406E" stroke-width="16" stroke-linecap="round"/>
+<path d="M118 98 A62 62 0 0 1 238 120" fill="none" stroke="#1E5A96" stroke-width="7" stroke-linecap="round"/>
+<circle cx="178" cy="150" r="52" fill="#fff" stroke="#16406E" stroke-width="5"/>
+<path d="M140 186 Q150 230 120 280 M210 190 Q230 225 250 280" fill="none" stroke="#16406E" stroke-width="5" stroke-linecap="round"/>
+<path d="M214 118 q14 10 12 26" fill="none" stroke="#C2410C" stroke-width="8" stroke-linecap="round"/>
+<line x1="330" y1="40" x2="236" y2="120" stroke="#0F2A4A" stroke-width="7" stroke-linecap="round"/>
+<circle cx="236" cy="120" r="5" fill="#9CC3EA"/>
+<g font-family="Nunito Sans,Arial,sans-serif" font-size="13" font-weight="700" fill="#0F2A4A">
+<text x="32" y="74">Acetábulo</text><text x="64" y="128">Lábio</text>
+<text x="146" y="155">Cabeça do</text><text x="156" y="171">fêmur</text>
+<text x="252" y="176" fill="#C2410C">Ressalto</text><text x="252" y="191" fill="#C2410C">ósseo</text>
+<text x="262" y="30">Artroscópio</text></g>
+<text x="20" y="290" font-family="Nunito Sans,Arial,sans-serif" font-size="10" fill="#46566A">Esquema ilustrativo, fora de escala</text>
+</svg>

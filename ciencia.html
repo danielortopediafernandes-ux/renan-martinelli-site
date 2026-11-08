@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F2A4A">
+<title>Ciência e ensino · Dr. Renan Martinelli</title>
+<meta name="description" content="Artigos, capítulos de livro, apresentações em congressos, mestrado na UFSC e atividade de ensino do Dr. Renan Martinelli, ortopedista do quadril.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#0F2A4A;--azul2:#16406E;--azul3:#1E5A96;--ceu:#9CC3EA;--claro:#EEF4FB;--ink:#1F2937;--soft:#46566A;--linha:#DCE6F2;--wa:#25D366}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Nunito Sans",system-ui,-apple-system,sans-serif;color:var(--ink);background:#fff;font-size:17px;line-height:1.6;padding-bottom:76px}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:"Marcellus",Georgia,serif;font-weight:400;letter-spacing:.02em;margin:0}
+h2{font-size:clamp(1.45rem,6.4vw,1.75rem);overflow-wrap:break-word;hyphens:auto;line-height:1.15;text-transform:uppercase}
+a{color:inherit}
+.w{padding:0 20px;max-width:1120px;margin:0 auto}
+.eyebrow{font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--azul3);margin:0 0 8px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:12px;text-decoration:none;font-weight:800;font-size:1rem}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-cl{background:#fff;color:var(--azul)}
+.btn-ln{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.btn-az{background:var(--azul);color:#fff}
+
+/* topo */
+.top{position:absolute;inset:0 0 auto 0;z-index:3;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.top span{font-family:"Marcellus",serif;letter-spacing:.12em;font-size:.82rem}
+.top a{font-size:.82rem;font-weight:700;text-decoration:none;opacity:.9}
+
+/* abertura — celular primeiro */
+.hero{position:relative;background:var(--azul);color:#fff}
+.hero .foto{position:relative;height:52vh;min-height:360px;max-height:460px;overflow:hidden}
+.hero .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero .foto:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,42,74,.25) 0%,rgba(15,42,74,0) 30%,rgba(15,42,74,.1) 55%,var(--azul) 92%)}
+.hero .txt{position:relative;margin-top:-90px;padding:0 20px 34px;z-index:2}
+.hero .txt .eyebrow{color:var(--ceu)}
+.hero h1{font-size:2.6rem;line-height:1.02;text-transform:uppercase;margin-bottom:12px}
+.hero .lead{color:#D3E2F2;margin:0 0 22px;font-size:1.05rem}
+.hero .acoes{display:grid;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;list-style:none}
+.chips li{font-size:.8rem;font-weight:700;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
+
+/* destaques */
+.sec{padding:56px 0}
+.cards{display:grid;gap:14px;margin-top:22px}
+.card{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:18px;box-shadow:0 10px 30px -22px rgba(15,42,74,.6)}
+.card .ic{flex:none;width:52px;height:52px;border-radius:14px;background:var(--claro);display:grid;place-items:center}
+.card h3{font-size:1.1rem;color:var(--azul);text-transform:uppercase;margin-bottom:4px}
+.card p{margin:0;color:var(--soft);font-size:.95rem}
+
+/* sobre */
+.sobre{background:var(--azul);color:#fff}
+.sobre .eyebrow{color:var(--ceu)}
+.sobre p{color:#D3E2F2}
+.sobre .cargo{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-left:4px solid var(--ceu);border-radius:14px;padding:16px 18px;margin:20px 0}
+.sobre .cargo b{display:block;color:#fff;font-size:1.05rem;margin-bottom:2px}
+.sobre .foto2{border-radius:16px;overflow:hidden;margin-top:22px;aspect-ratio:4/5}
+.sobre .foto2 img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+
+/* formação — linha do tempo */
+.tl{list-style:none;margin:24px 0 0;padding:0;position:relative}
+.tl:before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:var(--linha)}
+.tl li{position:relative;padding:0 0 22px 40px}
+.tl li:before{content:"";position:absolute;left:4px;top:5px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--azul3)}
+.tl li.ex:before{background:var(--azul3)}
+.tl .q{font-size:.75rem;font-weight:800;letter-spacing:.1em;color:var(--azul3);text-transform:uppercase}
+.tl h3{font-family:"Nunito Sans",sans-serif;font-weight:800;font-size:1.05rem;color:var(--azul);margin:2px 0}
+.tl p{margin:0;color:var(--soft);font-size:.95rem}
+.tag{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.08em;background:var(--azul);color:#fff;border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle}
+.soc{margin-top:8px;display:flex;flex-wrap:wrap;gap:8px}
+.soc span{font-size:.8rem;font-weight:700;padding:6px 11px;border-radius:999px;background:var(--claro);color:var(--azul2)}
+
+/* PAO */
+.pao{background:var(--claro)}
+.pao .box{background:#fff;border-radius:18px;padding:22px;margin-top:20px;box-shadow:0 10px 30px -22px rgba(15,42,74,.6)}
+.pao ul{margin:10px 0 0;padding-left:20px;color:var(--soft)}
+.pao li{margin-bottom:6px}
+
+/* condições */
+.cond{display:grid;gap:12px;margin-top:22px}
+.cond details{border:1px solid var(--linha);border-radius:14px;padding:0 18px;background:#fff}
+.cond summary{list-style:none;cursor:pointer;padding:16px 0;font-weight:800;color:var(--azul);display:flex;justify-content:space-between;align-items:center;gap:12px}
+.cond summary::-webkit-details-marker{display:none}
+.cond summary:after{content:"+";font-size:1.4rem;color:var(--azul3);line-height:1}
+.cond details[open] summary:after{content:"–"}
+.cond details p{margin:0 0 16px;color:var(--soft)}
+
+/* ciência */
+.lista{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
+.lista li{border-left:4px solid var(--azul3);background:var(--claro);border-radius:12px;padding:14px 16px}
+.lista b{color:var(--azul);display:block;line-height:1.35}
+.lista span{display:block;color:var(--soft);font-size:.88rem;margin-top:4px}
+.lista a{color:var(--azul3);font-weight:700}
+
+/* consultório */
+.cons{background:var(--azul);color:#fff}
+.cons .eyebrow{color:var(--ceu)}
+.galeria{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:22px -20px 0;padding:0 20px 6px;-webkit-overflow-scrolling:touch}
+.galeria img{flex:none;width:82%;aspect-ratio:3/2;object-fit:cover;border-radius:14px;scroll-snap-align:center}
+.info{display:grid;gap:14px;margin-top:22px}
+.info div{background:rgba(255,255,255,.07);border-radius:14px;padding:16px 18px}
+.info b{display:block;color:#fff;margin-bottom:2px}
+.info span{color:#D3E2F2;font-size:.95rem}
+.info a{color:#fff}
+
+footer{background:#0A1F38;color:#B8C8DA;font-size:.9rem;text-align:center;padding:26px 20px 30px}
+
+/* barra fixa no celular */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:9;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--linha)}
+
+/* computador */
+@media(min-width:900px){
+  body{padding-bottom:0}.barra{display:none}
+  .top{padding:22px 40px}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:640px}
+  .hero .foto{order:2;height:auto;max-height:none}
+  .hero .foto:after{background:linear-gradient(90deg,var(--azul) 0%,rgba(15,42,74,0) 35%)}
+  .hero .txt{margin:0;display:flex;flex-direction:column;justify-content:center;padding:100px 40px 60px max(40px,calc((100vw - 1120px)/2))}
+  .hero h1{font-size:4rem}
+  .hero .acoes{grid-template-columns:auto auto;justify-content:start}
+  h2{font-size:2.2rem}.sec{padding:84px 0}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .sobre .w{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}.sobre .foto2{margin:0}
+  .tl{columns:2;column-gap:50px}.tl:before{display:none}.tl li{break-inside:avoid}
+  .pao .w{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.pao .box{margin:0}
+  .cond{grid-template-columns:1fr 1fr}
+  .galeria{display:grid;grid-template-columns:repeat(4,1fr);overflow:visible;margin:22px 0 0;padding:0}.galeria img{width:100%}
+  .info{grid-template-columns:repeat(3,1fr)}
+}
+html,body{overflow-x:clip}.w>*{min-width:0}.btn-az{background:transparent!important;color:var(--azul)!important;border:1.5px solid var(--azul)}.lista a,.info a{display:inline-block;padding:10px 0;min-height:44px}.tl p{font-size:1rem}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}.lg-t{display:flex;flex-direction:column;line-height:1.15}.lg-t b{font-family:Marcellus,serif;font-weight:400;font-size:.92rem;letter-spacing:.16em}.lg-t i{font-style:normal;font-size:.62rem;letter-spacing:.24em;color:#9CC3EA;margin-top:3px}
+</style>
+<style>
+.cab{background:var(--azul);color:#fff;padding:72px 0 40px}.cab .eyebrow{color:var(--ceu)}.cab h1{font-size:2.2rem;line-height:1.05;text-transform:uppercase;margin-bottom:12px}.cab p{color:#D3E2F2;margin:0}
+.cab .top{position:static;padding:0 0 26px}
+.sec.alt{background:var(--claro)}.sec.alt .lista li{background:#fff}
+.premio{border-left-color:#C9A227!important}
+.sub{font-family:"Nunito Sans",sans-serif;font-weight:800;font-size:1rem;color:var(--azul);margin:28px 0 0;text-transform:uppercase;letter-spacing:.06em}
+.nota{color:var(--soft);font-size:.88rem;margin:14px 0 0}
+.lattes{margin-top:22px}
+</style>
+</head>
+<body>
+<header class="cab"><div class="w">
+<div class="top"><a class="logo" href="index.html" aria-label="Dr. Renan Martinelli, página inicial"><svg width="44" height="44" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="#9CC3EA" stroke-width="1.4"/><circle cx="32" cy="32" r="26.5" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width=".8"/><path d="M17 22a17 15 0 0 1 30 0" fill="none" stroke="#9CC3EA" stroke-width="1.6" stroke-linecap="round"/><text x="32" y="43" text-anchor="middle" font-family="Marcellus,serif" font-size="21" letter-spacing="1" fill="#fff">RM</text></svg><span class="lg-t"><b>RENAN MARTINELLI</b><i>CIRURGIA DO QUADRIL</i></span></a><a href="index.html">← Página inicial</a></div>
+<p class="eyebrow">Ciência e ensino</p>
+<h1>Produção científica e docência</h1>
+<p>Artigos, capítulos de livro, apresentações em congressos, mestrado e atividade de ensino em ortopedia.</p>
+</div></header>
+
+<main>
+<section class="sec"><div class="w">
+<p class="eyebrow">Artigos indexados no PubMed</p>
+<h2>Artigos científicos</h2>
+<ul class="lista">
+<li><b>Viscossuplementação com ácido hialurônico de alto peso molecular para a osteoartrite do quadril: revisão sistemática e metanálise atualizadas de ensaios clínicos randomizados</b><span>Pasqualotto T, Pasqualotto E, Migliardi LS, Lunelli L, Lunelli LO, Martinelli RVR. Revista Brasileira de Ortopedia, 2026.</span><a href="https://pubmed.ncbi.nlm.nih.gov/42038512/" target="_blank" rel="noopener">PubMed 42038512 (inglês) ↗</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42038506/" target="_blank" rel="noopener">42038506 (português) ↗</a></li>
+<li><b>O sinal de lucência peritubercular como fator preditivo de escorregamento do quadril contralateral na epifisiólise unilateral</b><span>Neto AK, Martinelli RVR, Gressler MA, Oliveira MA. Revista Brasileira de Ortopedia, 2024;59(6).</span><a href="https://pubmed.ncbi.nlm.nih.gov/39711631/" target="_blank" rel="noopener">PubMed 39711631 ↗</a></li>
+<li><b>Os 50 artigos mais citados da literatura médica brasileira em cirurgia do joelho</b><span>Martinelli RVR, Astur DC, Miyashita GK, Novaretti JV, Cohen M, Nicolini AP. Acta Ortopédica Brasileira, 2020;28:44-48.</span><a href="https://pubmed.ncbi.nlm.nih.gov/32095113/" target="_blank" rel="noopener">PubMed 32095113 ↗</a></li>
+</ul>
+<h3 class="sub">Outros artigos publicados</h3>
+<ul class="lista">
+<li><b>Fratura de diáfise de fêmur: experiência de um hospital terciário público brasileiro, referência em trauma, com haste intramedular bloqueada</b><span>Centenaro LFS, Martinelli RVR, Siqueira LFM, Araujo EF, Locks R. Revista AMRIGS, 2020;64:644-648.</span></li>
+<li><b>Efeito da acupuntura associada à reabilitação pós-operatória sobre a dor em pacientes submetidos à reconstrução do ligamento cruzado anterior: ensaio clínico controlado</b><span>Barbosa JGG, Pochini AC, Oliveira DC, Martinelli RVR, Margato GF, Zogbi TM, Zanotele M, Yamamura Y. International Journal of Acupuncture, 2020;14:87-95.</span></li>
+</ul>
+</div></section>
+
+<section class="sec alt"><div class="w">
+<p class="eyebrow">Di Livros · 2026</p>
+<h2>Capítulos de livro</h2>
+<ul class="lista">
+<li><b>Cirurgia assistida</b><span>Freitas A, Locks R, Martinelli RVR. In: Veiga D, Calil L, Giordano MN, Lins R, Busato TS (eds.). <i>Cirurgia Preservadora do Quadril do Adulto: Conceitos Atuais</i>. 1ª ed. Rio de Janeiro: Di Livros; 2026. p. 537-544.</span></li>
+<li><b>Artrite reumatoide</b><span>Oliveira LP, Pinheiro GRC, Martinelli RVR. In: Freitas A, Schwartsmann CR, Giordano MN, Busato TS (eds.). <i>Artroplastia Total do Quadril: Passado, Presente e Futuro</i>. 1ª ed. Rio de Janeiro: Di Livros; 2026. p. 365-374.</span></li>
+</ul>
+</div></section>
+
+<section class="sec"><div class="w">
+<p class="eyebrow">Congressos</p>
+<h2>Prêmios e apresentações</h2>
+<ul class="lista">
+<li class="premio"><b>3º Prêmio de Melhor Pôster · CBTO 2024</b><span>Fratura de diáfise de tíbia: o impacto econômico em um hospital terciário do custo de tratamento com controle de danos versus early total care. Vicenti VG, Borges LR, Martinelli RVR. Congresso Brasileiro de Trauma Ortopédico.</span></li>
+<li><b>Apresentação oral (apresentador) · Congresso da SBQ 2025</b><span>Mortalidade intra-hospitalar e perfil epidemiológico de idosos com fratura de quadril sob cuidados de unidade de terapia intensiva.</span></li>
+<li><b>E-pôsteres · Congresso da SBQ 2025</b><span>Desfechos após terapias com células-tronco na osteoartrite do quadril: revisão de escopo (com o Dr. Daniel Fernandes). · Mortalidade intra-hospitalar em pacientes acima de 60 anos operados de fratura do fêmur proximal antes e depois de protocolo de abordagem precoce.</span></li>
+<li><b>Apresentação oral e e-pôster · CBOT 2024</b><span>Fraturas do acetábulo em hospital referência em trauma: estudo epidemiológico. · Manejo de fraturas supraintercondilianas e do acetábulo após trauma de alta energia.</span></li>
+<li><b>Apresentação oral (apresentador) · CBOT 2022</b><span>O sinal de lucência peritubercular é fator preditor de escorregamento do quadril contralateral na epifisiólise?</span></li>
+<li><b>Debatedor · SULBRA 2025</b><span>XXIV Congresso Sul-Brasileiro de Ortopedia e Traumatologia.</span></li>
+</ul>
+</div></section>
+
+<section class="sec sobre"><div class="w"><div>
+<p class="eyebrow">Pesquisa em andamento</p>
+<h2>Mestrado na UFSC</h2>
+<div class="cargo"><b>Deformidade residual radiográfica do quadril após o fechamento epifisário em pacientes com epifisiólise femoral proximal</b>Programa de Pós-Graduação em Ciências Médicas da Universidade Federal de Santa Catarina (Capes 4) · mestrando desde fevereiro de 2025.</div>
+</div></div></section>
+
+<section class="sec alt"><div class="w">
+<p class="eyebrow">Ensino</p>
+<h2>Formação de novos ortopedistas</h2>
+<ul class="lista">
+<li><b>Diretor Científico e Preceptor do Programa de Especialização em Cirurgia do Quadril (R4)</b><span>Hospital Regional de São José Dr. Homero de Miranda Gomes · desde março de 2026.</span></li>
+<li><b>Preceptor da Residência de Ortopedia e Traumatologia</b><span>Hospital Regional de São José Dr. Homero de Miranda Gomes · desde maio de 2022.</span></li>
+<li><b>Preceptor da Residência de Ortopedia e Traumatologia</b><span>Hospital Infantil Joana de Gusmão, Florianópolis · desde janeiro de 2023.</span></li>
+<li><b>Orientação de monografias de residência</b><span>Fraturas do acetábulo: estudo epidemiológico em hospital referência de trauma (2023) · Fratura de diáfise de tíbia: impacto econômico do controle de danos versus early total care (2022). HRSJ.</span></li>
+</ul>
+<a class="btn btn-az lattes" href="http://lattes.cnpq.br/6377297923936160" target="_blank" rel="noopener">Ver o Currículo Lattes completo ↗</a>
+</div></section>
+</main>
+
+<footer>Dr. Renan Vinicius Romano Martinelli · CRM-SC 21033<br>Fontes: currículo de 23/07/2026, Currículo Lattes e PubMed (conferido em 08/11/2026).</footer>
+</body>
+</html>

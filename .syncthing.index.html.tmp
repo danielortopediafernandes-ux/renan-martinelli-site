@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0F2A4A">
+<title>Dr. Renan Martinelli · Cirurgia do Quadril</title>
+<meta name="description" content="Dr. Renan Martinelli: ortopedista com foco no quadril do jovem. Fellowship em Lyon (França) e Sydney (Austrália), formação em ortopedia pediátrica, Diretor Científico do Programa de Cirurgia do Quadril do Hospital Regional de São José. Atende na Ortho&Co, Florianópolis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#0F2A4A;--azul2:#16406E;--azul3:#1E5A96;--ceu:#9CC3EA;--claro:#EEF4FB;--ink:#1F2937;--soft:#46566A;--linha:#DCE6F2;--wa:#25D366}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Nunito Sans",system-ui,-apple-system,sans-serif;color:var(--ink);background:#fff;font-size:17px;line-height:1.6;padding-bottom:76px}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:"Marcellus",Georgia,serif;font-weight:400;letter-spacing:.02em;margin:0}
+h2{font-size:clamp(1.45rem,6.4vw,1.75rem);overflow-wrap:break-word;hyphens:auto;line-height:1.15;text-transform:uppercase}
+a{color:inherit}
+.w{padding:0 20px;max-width:1120px;margin:0 auto}
+.eyebrow{font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--azul3);margin:0 0 8px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:12px;text-decoration:none;font-weight:800;font-size:1rem}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-cl{background:#fff;color:var(--azul)}
+.btn-ln{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.btn-az{background:var(--azul);color:#fff}
+
+/* topo */
+.top{position:absolute;inset:0 0 auto 0;z-index:3;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.top span{font-family:"Marcellus",serif;letter-spacing:.12em;font-size:.82rem}
+.top a{font-size:.82rem;font-weight:700;text-decoration:none;opacity:.9}
+
+/* abertura — celular primeiro */
+.hero{position:relative;background:var(--azul);color:#fff}
+.hero .foto{position:relative;height:52vh;min-height:360px;max-height:460px;overflow:hidden}
+.hero .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero .foto:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,42,74,.25) 0%,rgba(15,42,74,0) 30%,rgba(15,42,74,.1) 55%,var(--azul) 92%)}
+.hero .txt{position:relative;margin-top:-90px;padding:0 20px 34px;z-index:2}
+.hero .txt .eyebrow{color:var(--ceu)}
+.hero h1{font-size:2.6rem;line-height:1.02;text-transform:uppercase;margin-bottom:12px}
+.hero .lead{color:#D3E2F2;margin:0 0 22px;font-size:1.05rem}
+.hero .acoes{display:grid;gap:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;list-style:none}
+.chips li{font-size:.8rem;font-weight:700;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
+
+/* destaques */
+.sec{padding:56px 0}
+.cards{display:grid;gap:14px;margin-top:22px}
+.card{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--linha);border-radius:16px;padding:18px;box-shadow:0 10px 30px -22px rgba(15,42,74,.6)}
+.card .ic{flex:none;width:52px;height:52px;border-radius:14px;background:var(--claro);display:grid;place-items:center}
+.card h3{font-size:1.1rem;color:var(--azul);text-transform:uppercase;margin-bottom:4px}
+.card p{margin:0;color:var(--soft);font-size:.95rem}
+
+/* sobre */
+.sobre{background:var(--azul);color:#fff}
+.sobre .eyebrow{color:var(--ceu)}
+.sobre p{color:#D3E2F2}
+.sobre .cargo{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-left:4px solid var(--ceu);border-radius:14px;padding:16px 18px;margin:20px 0}
+.sobre .cargo b{display:block;color:#fff;font-size:1.05rem;margin-bottom:2px}
+.sobre .foto2{border-radius:16px;overflow:hidden;margin-top:22px;aspect-ratio:4/5}
+.sobre .foto2 img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+
+/* formação — linha do tempo */
+.tl{list-style:none;margin:24px 0 0;padding:0;position:relative}
+.tl:before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:var(--linha)}
+.tl li{position:relative;padding:0 0 22px 40px}
+.tl li:before{content:"";position:absolute;left:4px;top:5px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--azul3)}
+.tl li.ex:before{background:var(--azul3)}
+.tl .q{font-size:.75rem;font-weight:800;letter-spacing:.1em;color:var(--azul3);text-transform:uppercase}
+.tl h3{font-family:"Nunito Sans",sans-serif;font-weight:800;font-size:1.05rem;color:var(--azul);margin:2px 0}
+.tl p{margin:0;color:var(--soft);font-size:.95rem}
+.tag{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.08em;background:var(--azul);color:#fff;border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle}
+.soc{margin-top:8px;display:flex;flex-wrap:wrap;gap:8px}
+.soc span{font-size:.8rem;font-weight:700;padding:6px 11px;border-radius:999px;background:var(--claro);color:var(--azul2)}
+
+/* PAO */
+.pao{background:var(--claro)}
+.pao .box{background:#fff;border-radius:18px;padding:22px;margin-top:20px;box-shadow:0 10px 30px -22px rgba(15,42,74,.6)}
+.pao ul{margin:10px 0 0;padding-left:20px;color:var(--soft)}
+.pao li{margin-bottom:6px}
+
+/* condições */
+.cond{display:grid;gap:12px;margin-top:22px}
+.cond details{border:1px solid var(--linha);border-radius:14px;padding:0 18px;background:#fff}
+.cond summary{list-style:none;cursor:pointer;padding:16px 0;font-weight:800;color:var(--azul);display:flex;justify-content:space-between;align-items:center;gap:12px}
+.cond summary::-webkit-details-marker{display:none}
+.cond summary:after{content:"+";font-size:1.4rem;color:var(--azul3);line-height:1}
+.cond details[open] summary:after{content:"–"}
+.cond details p{margin:0 0 16px;color:var(--soft)}
+
+/* ciência */
+.lista{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
+.lista li{border-left:4px solid var(--azul3);background:var(--claro);border-radius:12px;padding:14px 16px}
+.lista b{color:var(--azul);display:block;line-height:1.35}
+.lista span{display:block;color:var(--soft);font-size:.88rem;margin-top:4px}
+.lista a{color:var(--azul3);font-weight:700}
+
+/* consultório */
+.cons{background:var(--azul);color:#fff}
+.cons .eyebrow{color:var(--ceu)}
+.galeria{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:22px -20px 0;padding:0 20px 6px;-webkit-overflow-scrolling:touch}
+.galeria img{flex:none;width:82%;aspect-ratio:3/2;object-fit:cover;border-radius:14px;scroll-snap-align:center}
+.info{display:grid;gap:14px;margin-top:22px}
+.info div{background:rgba(255,255,255,.07);border-radius:14px;padding:16px 18px}
+.info b{display:block;color:#fff;margin-bottom:2px}
+.info span{color:#D3E2F2;font-size:.95rem}
+.info a{color:#fff}
+
+footer{background:#0A1F38;color:#B8C8DA;font-size:.9rem;text-align:center;padding:26px 20px 30px}
+
+/* barra fixa no celular */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:9;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--linha)}
+
+/* computador */
+@media(min-width:900px){
+  body{padding-bottom:0}.barra{display:none}
+  .top{padding:22px 40px}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:640px}
+  .hero .foto{order:2;height:auto;max-height:none}
+  .hero .foto:after{background:linear-gradient(90deg,var(--azul) 0%,rgba(15,42,74,0) 35%)}
+  .hero .txt{margin:0;display:flex;flex-direction:column;justify-content:center;padding:100px 40px 60px max(40px,calc((100vw - 1120px)/2))}
+  .hero h1{font-size:4rem}
+  .hero .acoes{grid-template-columns:auto auto;justify-content:start}
+  h2{font-size:2.2rem}.sec{padding:84px 0}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .sobre .w{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}.sobre .foto2{margin:0}
+  .tl{columns:2;column-gap:50px}.tl:before{display:none}.tl li{break-inside:avoid}
+  .pao .w{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.pao .box{margin:0}
+  .cond{grid-template-columns:1fr 1fr}
+  .galeria{display:grid;grid-template-columns:repeat(4,1fr);overflow:visible;margin:22px 0 0;padding:0}.galeria img{width:100%}
+  .info{grid-template-columns:repeat(3,1fr)}
+}
+html,body{overflow-x:clip}.w>*{min-width:0}.btn-az{background:transparent!important;color:var(--azul)!important;border:1.5px solid var(--azul)}.lista a,.info a{display:inline-block;padding:10px 0;min-height:44px}.tl p{font-size:1rem}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}.lg-t{display:flex;flex-direction:column;line-height:1.15}.lg-t b{font-family:Marcellus,serif;font-weight:400;font-size:.92rem;letter-spacing:.16em}.lg-t i{font-style:normal;font-size:.62rem;letter-spacing:.24em;color:#9CC3EA;margin-top:3px}
+.qds{display:grid;gap:10px;margin:0 0 22px}.qd{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(156,195,234,.35);color:#fff;text-decoration:none;transition:background .2s}.qd:active,.qd:hover{background:rgba(255,255,255,.14)}.qd-f{font-size:1.7rem;line-height:1;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.08);flex:none}.qd-r4{font-family:Marcellus,serif;font-size:1rem;letter-spacing:.06em;color:#9CC3EA;border:1px solid #9CC3EA}.qd-x{display:flex;flex-direction:column;flex:1;min-width:0;line-height:1.25}.qd-x small{font-size:.66rem;letter-spacing:.18em;color:#9CC3EA;font-weight:800}.qd-x b{font-family:Marcellus,serif;font-weight:400;font-size:1.1rem;margin:2px 0}.qd-x em{font-style:normal;font-size:.85rem;color:#D3E2F2}.qd-ar{flex:none;color:#9CC3EA}@media(min-width:900px){.qds{grid-template-columns:1fr;max-width:460px}}
+.temas{display:grid;gap:8px;margin:16px 0 22px}.temas a{display:flex;justify-content:space-between;align-items:center;min-height:52px;padding:12px 16px;border-radius:12px;background:#EEF4FB;border:1px solid #D5E3F2;color:var(--azul);font-weight:700;text-decoration:none}.temas a:nth-child(-n+3){background:var(--azul);color:#fff;border-color:var(--azul)}@media(min-width:900px){.temas{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+
+<div class="top"><a class="logo" href="index.html" aria-label="Dr. Renan Martinelli, página inicial"><svg width="44" height="44" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="#9CC3EA" stroke-width="1.4"/><circle cx="32" cy="32" r="26.5" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width=".8"/><path d="M17 22a17 15 0 0 1 30 0" fill="none" stroke="#9CC3EA" stroke-width="1.6" stroke-linecap="round"/><text x="32" y="43" text-anchor="middle" font-family="Marcellus,serif" font-size="21" letter-spacing="1" fill="#fff">RM</text></svg><span class="lg-t"><b>RENAN MARTINELLI</b><i>CIRURGIA DO QUADRIL</i></span></a><a href="#consultorio">Consultório</a></div>
+
+<header class="hero">
+  <div class="foto"><img src="img/renan-terno.jpg" alt="Dr. Renan Martinelli"></div>
+  <div class="txt">
+    <p class="eyebrow">Cirurgião do quadril · Florianópolis</p>
+    <h1>Dr. Renan<br>Martinelli</h1>
+    <p class="lead">Cirurgia do quadril com foco no quadril do jovem: do adolescente ao adulto ativo.</p>
+    <div class="qds"><a class="qd" href="fellowship-lyon.html"><span class="qd-f">🇫🇷</span><span class="qd-x"><small>FELLOWSHIP · 2024</small><b>Lyon, França</b><em>com o Dr. Nicolas Bonin</em></span><svg class="qd-ar" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></a><a class="qd" href="fellowship-sydney.html"><span class="qd-f">🇦🇺</span><span class="qd-x"><small>FELLOWSHIP · 2022</small><b>Sydney, Austrália</b><em>com o Dr. Michael Solomon</em></span><svg class="qd-ar" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></a><a class="qd" href="https://drfernandes.com.br/r4-quadril/" target="_blank" rel="noopener"><span class="qd-f qd-r4">R4</span><span class="qd-x"><small>DIRETOR CIENTÍFICO</small><b>Especialização em Quadril</b><em>Hospital Regional de São José</em></span><svg class="qd-ar" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></a></div>
+    <div class="acoes">
+      <a class="btn btn-wa" href="https://wa.me/554832397799?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Renan%20Martinelli."><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3z"/></svg>Agendar consulta</a>
+      <a class="btn btn-ln" href="#formacao">Conheça a formação</a>
+    </div>
+  </div>
+</header>
+
+<section class="sec"><div class="w">
+  <p class="eyebrow">Áreas de atuação</p>
+  <h2>O quadril em todas as fases</h2>
+  <nav class="temas" aria-label="Temas"><a href="protese-quadril-jovem.html"><span>Prótese de quadril no jovem</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></a><a href="osteotomias-colo-femoral.html"><span>Osteotomias do colo femoral</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></a><a href="epifisiolise.html"><span>Epifisiólise</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></a><a href="artroscopia.html"><span>Videoartroscopia do quadril</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></a><a href="quadril-jovem.html"><span>Quadril da criança e do jovem</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></a></nav>
+  <div class="cards">
+    <div class="card"><div class="ic"><svg width="30" height="30" viewBox="0 0 120 110" fill="none" stroke="#16406E" stroke-width="7" stroke-linecap="round"><path d="M20 30c10-14 30-18 40-8 10-10 30-6 40 8"/><circle cx="40" cy="62" r="10"/><circle cx="80" cy="62" r="10"/><path d="M44 72l-8 30M76 72l8 30"/></svg></div><div><h3>Quadril do jovem</h3><p>Impacto femoroacetabular, displasia e lesões do lábio, com foco em preservar a articulação.</p></div></div>
+    <div class="card"><div class="ic"><svg width="30" height="30" viewBox="0 0 120 110" fill="none" stroke="#16406E" stroke-width="7" stroke-linecap="round"><circle cx="60" cy="20" r="11"/><path d="M60 34v30M60 44l-20 12M60 44l22 6M60 64l-16 30M60 64l18 26"/></svg></div><div><h3>Quadril da criança</h3><p>Formação em ortopedia pediátrica: epifisiólise, Perthes e displasia do desenvolvimento.</p></div></div>
+    <div class="card"><div class="ic"><svg width="30" height="30" viewBox="0 0 120 110" fill="none" stroke="#16406E" stroke-width="7" stroke-linecap="round"><circle cx="76" cy="16" r="10"/><path d="M72 28l-14 26 18 10-6 30M58 54l-22 6M72 34l20 10M76 64l20 18"/></svg></div><div><h3>Quadril do esporte</h3><p>Dor no quadril do atleta, artroscopia do quadril e retorno seguro ao esporte.</p></div></div>
+  </div>
+  <a class="btn btn-ln" style="margin-top:18px;color:var(--azul);border-color:var(--azul)" href="artroscopia.html">Videoartroscopia do quadril</a>
+</div></section>
+
+<section class="sec sobre" id="sobre"><div class="w">
+  <div>
+    <p class="eyebrow">Quem é</p>
+    <h2>Dr. Renan Martinelli</h2>
+    <p>Ortopedista e traumatologista formado pelo Hospital Regional de São José, com formação complementar em ortopedia pediátrica e cirurgia do quadril no Brasil, na França e na Austrália.</p>
+    <div class="cargo"><b>Diretor Científico do Programa de Especialização em Cirurgia do Quadril (R4)</b>Hospital Regional de São José Homero de Miranda Gomes</div>
+    <p>É preceptor da residência médica em ortopedia no Hospital Regional de São José e no Hospital Infantil Joana de Gusmão, e mestrando em Ciências Médicas na UFSC.</p>
+  </div>
+  <div class="foto2"><img src="img/renan-jaleco.jpg" alt="Dr. Renan Martinelli de jaleco"></div>
+</div></section>
+
+<section class="sec" id="formacao"><div class="w">
+  <p class="eyebrow">Formação</p>
+  <h2>Treinamento no Brasil e no exterior</h2>
+  <ul class="tl">
+    <li class="ex"><div class="q">2024 · Lyon, França</div><h3>Fellowship em Artroplastia e Cirurgia Preservadora do Quadril</h3><p>Lyon-Ortho-Clinic / Clinique de la Sauvegarde, com o Dr. Nicolas Bonin.</p></li>
+    <li class="ex"><div class="q">2022 · Sydney, Austrália</div><h3>Fellowship em Cirurgia do Quadril</h3><p>Prince of Wales Hospital, com o Dr. Michael Solomon.</p></li>
+    <li><div class="q">2023 – 2024 · São José, SC</div><h3>Fellowship em Cirurgia do Quadril</h3><p>Hospital Regional de São José, sob orientação do Prof. Dr. Daniel Fernandes.</p></li>
+    <li><div class="q">2021 – 2022 · Florianópolis, SC</div><h3>Fellowship em Ortopedia Pediátrica</h3><p>Hospital Infantil Joana de Gusmão, sob orientação do Dr. Anastácio Kotzias Neto.</p></li>
+    <li><div class="q">2025 – atual · UFSC</div><h3>Mestrado em Ciências Médicas</h3><p>Pesquisa sobre a deformidade residual do quadril após a epifisiólise.</p></li>
+    <li><div class="q">2018 – 2019 · UNIFESP</div><h3>Especialização em Traumatologia do Esporte</h3><p>Universidade Federal de São Paulo.</p></li>
+    <li><div class="q">2015 – 2018 · São José, SC</div><h3>Residência em Ortopedia e Traumatologia</h3><p>Hospital Regional de São José.</p></li>
+    <li><div class="q">2009 – 2014 · Itajaí, SC</div><h3>Graduação em Medicina</h3><p>Universidade do Vale do Itajaí (UNIVALI).</p></li>
+  </ul>
+  <p style="color:var(--soft);font-size:.95rem;margin:4px 0 0">Treinamentos práticos em artroscopia e preservação do quadril em Lyon (França, 2024), Naples (EUA, 2019) e no Brasil (2024).</p>
+  <div class="soc"><span>SBOT</span><span>SBQ</span><span>SBOP</span><span>SBRATE</span><span>ISHA</span></div>
+</div></section>
+
+<section class="sec pao" id="osteotomia"><div class="w">
+  <div>
+    <p class="eyebrow">Displasia do quadril</p>
+    <h2>Osteotomia periacetabular</h2>
+    <p style="color:var(--soft)">Na displasia do quadril, o acetábulo (a "concha" da bacia) é raso e cobre pouco a cabeça do fêmur. A carga se concentra numa área pequena da cartilagem, o que causa dor e pode levar ao desgaste precoce da articulação.</p>
+  </div>
+  <div class="box">
+    <h3 style="color:var(--azul);font-size:1.15rem;text-transform:uppercase">Como funciona</h3>
+    <p style="color:var(--soft);margin:8px 0 0">A osteotomia periacetabular reposiciona o acetábulo para que ele passe a cobrir melhor a cabeça do fêmur, preservando o quadril do próprio paciente.</p>
+    <ul><li>Indicada principalmente para adolescentes e adultos jovens com displasia</li><li>Busca aliviar a dor e retardar o desgaste da articulação</li><li>A indicação depende da avaliação clínica e dos exames de imagem</li></ul>
+  </div>
+  <a class="btn btn-ln" style="margin-top:18px;color:var(--azul);border-color:var(--azul)" href="quadril-jovem.html">Quadril da criança e do jovem</a>
+</div></section>
+
+<section class="sec" id="condicoes"><div class="w">
+  <p class="eyebrow">Condições tratadas</p>
+  <h2>Quadril da criança, do jovem e do atleta</h2>
+  <div class="cond">
+    <details><summary>Impacto femoroacetabular</summary><p>Contato anormal entre o fêmur e o acetábulo durante o movimento, causa frequente de dor no quadril do jovem ativo.</p></details>
+    <details><summary>Displasia do quadril</summary><p>Acetábulo raso, que cobre pouco a cabeça do fêmur e sobrecarrega a cartilagem.</p></details>
+    <details><summary>Lesão do lábio acetabular</summary><p>Lesão da borda de cartilagem do acetábulo, muitas vezes associada ao impacto ou à displasia.</p></details>
+    <details><summary>Epifisiólise</summary><p>Escorregamento da cabeça do fêmur na fase de crescimento, mais comum no adolescente.</p></details>
+    <details><summary>Doença de Legg-Calvé-Perthes</summary><p>Alteração da circulação da cabeça do fêmur na infância.</p></details>
+    <details><summary>Dor no quadril do atleta</summary><p>Lesões ligadas ao esporte, avaliadas com foco no retorno seguro à atividade.</p></details>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0" id="ciencia"><div class="w">
+  <p class="eyebrow">Produção científica</p>
+  <h2>Artigos e capítulos</h2>
+  <ul class="lista">
+    <li><b>Viscossuplementação com ácido hialurônico na artrose do quadril: revisão sistemática e metanálise</b><span>Revista Brasileira de Ortopedia, 2026 · <a href="https://pubmed.ncbi.nlm.nih.gov/42038512/">PubMed</a></span></li>
+    <li><b>Sinal de lucência peritubercular como preditor de escorregamento contralateral na epifisiólise</b><span>Revista Brasileira de Ortopedia, 2024 · <a href="https://pubmed.ncbi.nlm.nih.gov/39711631/">PubMed</a></span></li>
+    <li><b>Os 50 artigos mais citados da literatura médica brasileira em cirurgia do joelho</b><span>Acta Ortopédica Brasileira, 2020 · <a href="https://pubmed.ncbi.nlm.nih.gov/32095113/">PubMed</a></span></li>
+    <li><b>Capítulo "Cirurgia assistida"</b><span>Cirurgia Preservadora do Quadril do Adulto: Conceitos Atuais, 2026</span></li>
+    <li><b>Capítulo "Artrite reumatoide"</b><span>Artroplastia Total do Quadril: Passado, Presente e Futuro, 2026</span></li>
+    <li><b>3º Prêmio de Melhor Pôster</b><span>Congresso Brasileiro de Trauma Ortopédico, 2024</span></li>
+  </ul>
+  <a class="btn btn-az" style="margin-top:18px" href="ciencia.html">Produção científica completa</a> <a class="btn btn-az" style="margin-top:10px" href="http://lattes.cnpq.br/6377297923936160">Ver Currículo Lattes</a>
+</div></section>
+
+<section class="sec cons" id="consultorio"><div class="w">
+  <p class="eyebrow">Consultório</p>
+  <h2>Ortho&amp;Co · Florianópolis</h2>
+  <div class="galeria">
+    <img src="img/orthoeco/recepcao.jpg" alt="Recepção da Ortho&Co">
+    <img src="img/orthoeco/consultorio-1.jpg" alt="Consultório da Ortho&Co">
+    <img src="img/orthoeco/sala-espera.jpg" alt="Sala de espera da Ortho&Co">
+    <img src="img/orthoeco/consultorio-2.jpg" alt="Consultório da Ortho&Co">
+  </div>
+  <div class="info">
+    <div><b>Endereço</b><span>Square SC · Torre Jurerê B, salas 210 e 212<br>Rod. José Carlos Daux, 5500 · Saco Grande, Florianópolis · CEP 88032-005<br>Estacionamento no condomínio · <a href="https://maps.google.com/?q=Rod.+Jos%C3%A9+Carlos+Daux,+5500,+Florian%C3%B3polis">Abrir no mapa</a></span></div>
+    <div><b>Agendamento</b><span>Telefone e WhatsApp: <a href="tel:+554832397799">(48) 3239-7799</a><br>clinica.orthoeco@gmail.com</span></div>
+    <div><b>Horário</b><span>Segunda a sexta, das 8h às 17h<br>Somente com horário marcado</span></div>
+  </div>
+</div></section>
+
+<footer>Dr. Renan Vinicius Romano Martinelli · Ortopedia e Traumatologia · CRM-SC 21033</footer>
+
+<div class="barra"><a class="btn btn-wa" href="https://wa.me/554832397799?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Renan%20Martinelli."><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3z"/></svg>Agendar pelo WhatsApp</a></div>
+
+</body>
+</html>
